@@ -1,0 +1,322 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	font-family: "Recursive";
+}
+
+html, body{
+	background:#ffffff;
+	color:#000;
+	font-family:Arial;
+}
+
+.title.color h1, h2, h3, h4, h5, h6{
+	color:#000;
+}
+
+a{
+	text-decoration:none;
+}
+
+.icon-logo{
+	margin-top:5px;
+}
+
+.icon-logo{
+	pointer-events:none;
+	cursor:none;
+	text-decoration:none;
+}
+
+.icon-logo::before{
+	content: ' ';
+	padding-right:25px;
+}
+
+/* HEADER*/
+
+.titulo_clinica{
+	padding-left:38px; 
+	font-family:Arial;
+	color:#000;
+}
+
+.menu{
+	background:linear-gradient(180deg,#4F4F4F, #363636, #4F4F4F);
+	color:#fff;
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+}
+
+.menu a{
+	color:white;
+	padding:15px;
+}
+
+.menu a::before{
+	content: '  ';
+	padding-right:10px;
+}
+
+.menu a:hover{
+	background:#ffffff;
+	color:#000000;
+	opacity:1;
+	animation-name:fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: .4s;
+}
+
+/* FINAL DO HEADER*/
+
+
+/**
+	MAIN
+*/
+
+main{
+	width:100%;
+}
+
+.main-img {
+	display:flex;
+	flex-direction:row;
+	padding:0px 10px 10px 10px;
+	margin-left:38px;
+	pointer-events:none;
+	cursor:none;
+}
+
+.main-img p{
+	text-align:left;
+	font-size:25px;
+	margin-top:-10px;
+}
+
+.main-img p::before{
+	content:' ';
+}
+.main-img p::after{
+	content:' ';
+}
+
+.main-img2 img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0px 10px 10px 10px;
+	width:90%;
+}
+
+
+/*FINAL DO MAIN*/
+
+aside{
+	padding: 10px 5px;
+}
+
+.aside.conteudo{
+	padding:4px;
+}
+
+.aside.box{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	text-align: center;
+}
+
+.item.a img{
+	width:128px;
+}
+
+.item.b img{
+	width:128px;
+}
+
+.item.c img{
+	width:128px;
+}
+
+.item.d img{
+	width:128px;
+}
+
+.rodape{
+	background:linear-gradient(180deg,#4F4F4F, #363636, #4F4F4F);
+	color:white;
+	display:flex;
+	flex-direction:row;
+	margin-bottom:0;
+	padding:25px;
+	justify-content:space-around;
+}
+
+
+.icon-zap span, h3{
+	font-size:30px;
+	text-align:left;
+	color:#ffffff;
+}
+
+.icon-zap span::after{
+	content:' ';
+	padding-right:2px;
+}
+
+.icon-zap.logo img{
+	width:160px;
+	height:64px;
+}
+
+.icon-zap.tel img{
+	height: 64px;
+	width: 64px;		
+}
+
+.img.zap.zap
+{
+	height: 64px;
+	width: 64px;
+}
+
+
+/* FINAL DO FOOTER*/
+
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+h2, p{
+	text-align:left;
+	padding:10px;
+}
+
+
+@media(max-width:800px)and (min-width:340px)
+{	
+
+	.footer-item{
+		text-align:center;
+		height:100%;
+	}
+
+	.icon-logo{
+		display:none;
+		height: 100%;
+	}
+
+	
+	.icon-zap span, h3{
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		font-size:25px;
+		text-align:center;
+	}
+	
+	.icon-zap span::after{
+		content:'';
+	}
+
+	.icon-zap img{
+		width:64px;
+	}
+	
+	.icon.zap.logo {
+		width:100%;
+	}
+	
+	.icon-zap.logo img{
+		width:160px;
+		height:64px;
+		margin-left:52px;
+		margin-bottom:12px;
+	}
+	
+	.titulo_clinica{
+		padding-left:0px; 
+		font-family:Arial;
+		color:#7b4b3f;
+		text-align:center;
+	}
+	
+	
+	
+	.menu{
+		flex-direction:column;
+	}
+		
+	.menu a{
+		border-bottom: 1px solid #dea997;
+		font-size:1rem;
+		text-align:center;
+	}
+	
+	h2,p{
+		text-align:center;
+	}
+	
+	.main-img{
+		flex-direction:column;
+		margin-left:0px;		
+	}
+	
+	.main-img img{
+		display:block;
+		margin-right:auto;
+		margin-left:auto;
+		width:95%;
+	}
+	
+	.main-img p{
+		text-align:justify;
+		font-size:18px;
+		margin-top:0px;
+	}
+
+	/*
+	.aside.conteudo{
+		
+	}	
+	*/
+		
+	.rodape{
+		background:linear-gradient(180deg,#4F4F4F, #363636, #4F4F4F);
+		flex-direction:column;
+	}
+	
+	.rodape{
+		display:block;
+		margin-bottom:auto;
+	}
+	
+	
+	.rodape span{
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+	}
+	.rodape img{
+		padding-top:10px;
+	}
+	.rodape h3{
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+		font-size:35px;
+	}
+}
+

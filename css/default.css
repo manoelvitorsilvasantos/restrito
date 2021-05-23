@@ -1,0 +1,65 @@
+:root{
+
+    /* configuracoes básicas */
+    --banner-color:linear-gradient(180deg,#4F4F4F, #363636, #4F4F4F);
+    --fundo-gradient: linear-gradient(to left, #1E90FF, #4169E1);
+    --radius:5px;
+    --text-center:center;
+    --none:none;
+    
+    /*preenchimento*/
+    --padding-default:10px;
+    --padding-small:5px;
+    --padding-middle:12px;
+    --padding-big:25;
+
+
+    /*Cores*/
+    --branco:#ffffff;
+    --preto:#000000;
+    --azul:#000fff;
+    --amarelo:#fff000;
+    --verde:green;
+    --vermelho:red;
+    --cinza:gray;
+    --prata:silver;
+    --dourado:gold;
+    --salmao:salmon;
+    --laranja:orange;
+    --azul_escuro:darkblue;
+    --verde_escuro:darkgreen;
+    --amarelo_claro:lightyellow;
+    --cinza_escuro:darkgray;
+    --azul_celeste:skyblue;
+    --violeta:violet;
+    --roxo:purple;
+    --rosa:pink;
+    --laranja_escuro:darkorange;
+}
+
+
+.link_button{
+    display: block;
+    border-radius:5px;
+    background:linear-gradient(45deg, #1E90FF, #4169E1);
+    padding: 12px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-decoration:0;
+}
+
+.link_button:hover{
+    border-radius:5px;
+    background:linear-gradient(45deg,#4169E1,#1E90FF);
+    padding: 12px;
+    text-align: center;
+    color: silver;
+}
+
+
+.link-field div{
+    width: 100%;
+}

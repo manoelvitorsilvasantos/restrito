@@ -1,0 +1,2 @@
+copie o arquivo .htaccess para a raiz da pasta desse sisteminha no no xamp
+ou copie dentro do diretório em que se encontra os arquivos php no servidor.

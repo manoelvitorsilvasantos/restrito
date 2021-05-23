@@ -1,0 +1,57 @@
+:root{
+	--main-radius: 5px;
+  	--main-padding: 5px;
+  	--main-color: #7b4b3f;
+}
+
+.main.grid{
+	display:inline-grid;
+	grid-template-columns: repeat(8, 4fr);
+	grid-template-rows: repeat(8, 1fr);
+	grid-gap:25px;
+	grid-template-areas: 
+	"photo1 photo1 photo1 photo1 photo1 photo1 texto texto"
+	"photo1 photo1 photo1 photo1 photo1 photo1 texto texto"
+	"photo1 photo1 photo1 photo1 photo1 photo1 texto texto"
+	"photo1 photo1 photo1 photo1 photo1 photo1 texto texto"
+	"photo2 photo2 photo2 photo2 photo2 photo2 photo2 photo2"
+	"photo2 photo2 photo2 photo2 photo2 photo2 photo2 photo2"
+	"photo2 photo2 photo2 photo2 photo2 photo2 photo2 photo2"
+	"photo2 photo2 photo2 photo2 photo2 photo2 photo2 photo2";
+}
+
+.main.A{
+	grid-area: photo1;
+	text-align:center;
+	width: 90%;
+}
+
+.main.B{
+	grid-area: texto;
+}
+
+.main.C{
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	grid-area: photo2;
+	padding:0px 10px 10px 10px;
+}
+
+
+
+@media (max-width: 720px)
+{
+	.main.grid{
+		display:grid;
+		grid-template-columns: repeat(3, 3fr);
+		grid-template-rows:repeat(1, 1fr);
+		grid-gap:20px;
+		grid-template-areas: 
+		"photo1" 
+		"texto" 
+		"photo2";
+		justify-items: center;
+		width: 100%;
+	}
+}
