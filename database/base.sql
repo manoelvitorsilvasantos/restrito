@@ -17,9 +17,9 @@ CREATE TABLE IF NOT EXISTS login(
 
 #INSERE OS DADOS
 INSERT INTO login(usuario, senha, email, nivel) VALUES
-('admin', MD5('65564747'), 'mvictordossantos.limite@gmail.com', 3),
-('mvictor', MD5('65564747'),'mvictordossantos.limite@gmail.com',3),
-('victor', MD5('65564747'), 'mvictordossantos@gmail.com', 2);
+('admin', MD5('123456'), 'mvictordossantos.limite@gmail.com', 3),
+('mvictor', MD5('123456'),'mvictordossantos.limite@gmail.com',3),
+('victor', MD5('123456'), 'mvictordossantos@gmail.com', 2);
 
 #CRIA UMA TABELA SE NAO EXISTIR
 CREATE TABLE IF NOT EXISTS pessoas(
